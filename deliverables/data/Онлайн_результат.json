@@ -1,0 +1,903 @@
+{
+  "metadata": {
+    "asset": "Polkadot",
+    "symbol": "DOT",
+    "compare_symbol": null,
+    "period_days": 30,
+    "start_date": "2026-10-29",
+    "end_date": "2026-11-27",
+    "created_at": "2026-11-27T07:21:07+00:00",
+    "mode": "online",
+    "algorithm_version": "1.0"
+  },
+  "market": {
+    "price": 0.689817,
+    "market_cap": 1182354245,
+    "volume": 62745774,
+    "change_24h": 3.92248,
+    "circulating_supply": 1714012056.15419,
+    "updated_at": "2026-11-27T07:19:51.000Z",
+    "period_change": -23.982398239823986
+  },
+  "compare_market": null,
+  "modules": {
+    "technical": {
+      "score": 46.8,
+      "indicators": {
+        "close": 0.691,
+        "RSI (14)": 34.11,
+        "MACD": -0.0767,
+        "Signal": -0.0834,
+        "SMA (20)": 0.7371,
+        "EMA (20)": 0.7428,
+        "BB upper": 0.886,
+        "BB lower": 0.5883
+      },
+      "explanations": [
+        "RSI = 34.1. Значения ниже 30 и выше 70 показывают перепроданность и перекупленность, но не гарантируют разворот.",
+        "MACD выше сигнальной линии: восходящий импульс.",
+        "Цена ниже SMA20 и ниже EMA20.",
+        "Цена находится внутри полос Боллинджера: экстремального отклонения нет.",
+        "Итог: 20% RSI + 25% MACD + 20% SMA + 20% EMA + 15% Bollinger Bands = 46.8/100."
+      ]
+    },
+    "fundamental": {
+      "score": 81.3,
+      "criteria": [
+        {
+          "criterion": "Технологическая архитектура",
+          "score": 88,
+          "weight": 0.25,
+          "basis": "Relay Chain, общая безопасность, парачейны и XCM.",
+          "url": "https://wiki.polkadot.network/docs/learn-architecture"
+        },
+        {
+          "criterion": "Развитие экосистемы",
+          "score": 78,
+          "weight": 0.25,
+          "basis": "Многосетевая экосистема и инструменты разработки; балл является учебной экспертной оценкой.",
+          "url": "https://polkadot.com/ecosystem/"
+        },
+        {
+          "criterion": "Экономическая модель DOT",
+          "score": 68,
+          "weight": 0.2,
+          "basis": "DOT используется в стейкинге, управлении и оплате ресурсов; учитывается инфляционный риск.",
+          "url": "https://wiki.polkadot.network/docs/learn-DOT"
+        },
+        {
+          "criterion": "Активность разработки",
+          "score": 85,
+          "weight": 0.15,
+          "basis": "Открытые репозитории и регулярно обновляемая документация; для упрощения балл задан методикой.",
+          "url": "https://github.com/paritytech/polkadot-sdk"
+        },
+        {
+          "criterion": "Управление OpenGov",
+          "score": 90,
+          "weight": 0.15,
+          "basis": "Децентрализованные референдумы и непосредственное участие держателей DOT.",
+          "url": "https://wiki.polkadot.network/docs/learn-polkadot-opengov"
+        }
+      ],
+      "explanations": [
+        "Оценка рассчитана по пяти критериям с весами 25%, 25%, 20%, 15% и 15%.",
+        "Это учебная экспертная оценка по официальной документации, а не автоматический прогноз стоимости."
+      ]
+    },
+    "onchain": {
+      "score": 50.0,
+      "metrics": [
+        {
+          "metric": "Extrinsics на блок (среднее)",
+          "current": 2.0,
+          "previous": 2.0,
+          "change_pct": 0.0,
+          "score": 50.0,
+          "weight": 0.25
+        }
+      ],
+      "data_mode": "rpc",
+      "explanations": [
+        "Открытый Polkadot RPC: блок № 34057174; среднее число extrinsics в 10 блоках сравнивается с выборкой на 1000 блоков раньше.",
+        "Данные получены напрямую из сети Polkadot без регистрации и API-ключа.",
+        "Это упрощённый показатель активности Relay Chain, а не полная статистика всех парачейнов."
+      ]
+    },
+    "sentiment": {
+      "score": 12.0,
+      "news_score": 50.0,
+      "dynamics_score": 50.0,
+      "fear_greed": 12,
+      "fear_greed_label": "Extreme Fear",
+      "counts": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "news": [],
+      "explanations": [
+        "Тональность заголовков определяется учебным словарным классификатором; нейтральные публикации учитываются в знаменателе.",
+        "Оценка новостей: 50 + 50 × (позитивные − негативные) / все публикации.",
+        "Fear & Greed характеризует преимущественно общий рынок и Bitcoin, а не только Polkadot."
+      ]
+    }
+  },
+  "integrated": {
+    "score": 49.3,
+    "label": "Нейтральная",
+    "available_modules": 4,
+    "formula": "(0.30 × 46.8 + 0.25 × 81.3 + 0.25 × 50.0 + 0.20 × 12.0) / 1.00 = 49.3",
+    "weights": {
+      "technical": 0.3,
+      "fundamental": 0.25,
+      "onchain": 0.25,
+      "sentiment": 0.2
+    }
+  },
+  "conflicts": [
+    {
+      "module_1": "Технический анализ",
+      "module_2": "Фундаментальный анализ",
+      "difference": 34.5,
+      "severity": "Средняя",
+      "description": "Оценки различаются на 34.5 балла."
+    },
+    {
+      "module_1": "Технический анализ",
+      "module_2": "Анализ настроений",
+      "difference": 34.8,
+      "severity": "Средняя",
+      "description": "Оценки различаются на 34.8 балла."
+    },
+    {
+      "module_1": "Фундаментальный анализ",
+      "module_2": "Ончейн-анализ",
+      "difference": 31.3,
+      "severity": "Средняя",
+      "description": "Оценки различаются на 31.3 балла."
+    },
+    {
+      "module_1": "Фундаментальный анализ",
+      "module_2": "Анализ настроений",
+      "difference": 69.3,
+      "severity": "Высокая",
+      "description": "Оценки различаются на 69.3 балла; сигналы имеют противоположную направленность."
+    },
+    {
+      "module_1": "Ончейн-анализ",
+      "module_2": "Анализ настроений",
+      "difference": 38.0,
+      "severity": "Средняя",
+      "description": "Оценки различаются на 38.0 балла."
+    }
+  ],
+  "quality": {
+    "completeness": 100.0,
+    "consistency": 30.7,
+    "confidence": 79.2,
+    "live_sources": 6
+  },
+  "risks": [
+    "Общий рыночный индекс находится в зоне сильного страха.",
+    "Преобладает негативный или неопределённый информационный фон.",
+    "Между аналитическими модулями есть существенные противоречия.",
+    "Высокая волатильность криптовалют и возможные ошибки внешних API ограничивают точность оценки."
+  ],
+  "conclusion": "Интегральная оценка Polkadot составляет 49.3/100 — нейтральная. Наиболее сильный сигнал даёт направление «Фундаментальный анализ» (81.3), наиболее слабый — «Анализ настроений» (12.0). Обнаружены расхождения между направлениями, поэтому итог следует трактовать осторожно и учитывать разные временные горизонты. Результат носит учебный информационно-аналитический характер и не является индивидуальной инвестиционной рекомендацией.",
+  "sources": [
+    {
+      "name": "CoinGecko",
+      "category": "Рыночные данные",
+      "status": "ok",
+      "message": "Данные получены",
+      "updated_at": "2026-11-27T07:20:59.214400+00:00"
+    },
+    {
+      "name": "Binance",
+      "category": "OHLCV",
+      "status": "ok",
+      "message": "Расхождение последней цены с CoinGecko: 0.17%",
+      "updated_at": "2026-11-27T07:20:59.214462+00:00"
+    },
+    {
+      "name": "Alternative.me",
+      "category": "Настроения",
+      "status": "ok",
+      "message": "Данные получены",
+      "updated_at": "2026-11-27T07:20:59.214479+00:00"
+    },
+    {
+      "name": "CryptoPanic / Google News / Cointelegraph",
+      "category": "Новости",
+      "status": "ok",
+      "message": "Cointelegraph Polkadot RSS",
+      "updated_at": "2026-11-27T07:21:07.660068+00:00"
+    },
+    {
+      "name": "Polkadot Public RPC",
+      "category": "Ончейн",
+      "status": "ok",
+      "message": "Блок № 34057174; среднее число extrinsics в двух выборках по 10 блоков; ключ не требуется",
+      "updated_at": "2026-11-27T07:21:07.660104+00:00"
+    },
+    {
+      "name": "Data Processor",
+      "category": "Контроль качества",
+      "status": "ok",
+      "message": "Пропуски, дубликаты, аномалии и актуальность проверены",
+      "updated_at": "2026-11-27T07:21:07.707091+00:00"
+    },
+    {
+      "name": "Polkadot Docs / Wiki",
+      "category": "Фундаментальные данные",
+      "status": "reference",
+      "message": "Официальные материалы; экспертные баллы по методике",
+      "updated_at": "2026-11-27T07:21:07.707104+00:00"
+    },
+    {
+      "name": "News Quality Control",
+      "category": "Контроль новостей",
+      "status": "warning",
+      "message": "Найдены только публикации старше 30 дней; они показаны как архив и не участвуют в оценке актуальных настроений.",
+      "updated_at": "2026-11-27T07:21:07.707115+00:00"
+    }
+  ],
+  "news_display": [
+    {
+      "title": "Moonbeam to pivot from Polkadot to Base, unveils AI agent framework",
+      "url": "https://cointelegraph.com/news/moonbeam-pivots-from-polkadot-to-base-unveils-ai-agent-framework?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-07-05T00:50:30+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "Hyperbridge attacker mints 1B bridged Polkadot tokens in $237K exploit",
+      "url": "https://cointelegraph.com/news/hacker-steals-237k-1b-bridged-dot-hyperbridge?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-04-13T10:19:10+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "ING Germany expands crypto ETP and ETN offerings with Bitwise, VanEck",
+      "url": "https://cointelegraph.com/news/ing-germany-crypto-etp-etn-bitwise-vaneck?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2026-02-03T08:24:51+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "Aave, Chainlink ETPs among six new 21Shares listings in Europe",
+      "url": "https://cointelegraph.com/news/21shares-six-crypto-etps-nasdaq-stockholm-aave-chainlink?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-11-20T14:26:00+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "AI Polkadot parachain Phala votes to fully switch to Ethereum L2",
+      "url": "https://cointelegraph.com/news/polkadot-parachain-phala-votes-switch-ethereum-l2?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-10-10T06:24:23+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "Polkadot weighs native DOT-backed algorithmic stablecoin",
+      "url": "https://cointelegraph.com/news/polkadot-weighs-native-dot-backed-algorithmic-stablecoin?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-09-29T15:08:24+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "Solana DATs, TradFi adoption convince traders that $300 SOL is possible",
+      "url": "https://cointelegraph.com/markets/solana-dats-tradfi-adoption-fuel-sol-rally-toward-dollar300?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-09-15T22:08:19+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "Polkadot DAO approves 2.1B token cap on DOT supply in tokenomics shift",
+      "url": "https://cointelegraph.com/news/polkadot-dao-approves-2-1b-hard-cap-dot-supply?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-09-15T12:06:54+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "Crypto Biz: Bitcoin miners face tariff hit, blockchain courts Wall Street",
+      "url": "https://cointelegraph.com/news/crypto-biz-bitcoin-tariffs-polkadot-stablecoin-eth?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-08-22T21:00:00+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "Polkadot launches capital markets division to court Wall Street",
+      "url": "https://cointelegraph.com/news/polkadot-capital-markets-division-wall-street?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-08-19T17:03:53+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "Polkadot community split on selling 500K DOT for Bitcoin reserve",
+      "url": "https://cointelegraph.com/news/polkadot-bitcoin-reserve-proposal-sparks-mixed-reactions?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-06-13T10:58:34+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "ASTR becomes OP Superchain’s first interoperable token via Chainlink CCIP",
+      "url": "https://cointelegraph.com/news/astr-becomes-op-superchain-first-interoperable-token?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-06-11T14:00:00+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "SEC delays Solana ETF as decisions for Polkadot, XRP loom",
+      "url": "https://cointelegraph.com/news/sol-ltc-etf-delayed-polkadot-xrp-etfs-june-deadline?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-05-14T11:13:17+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "SEC delays decision on Polkadot ETF",
+      "url": "https://cointelegraph.com/news/sec-punts-decision-on-polkadot-etf?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-04-24T23:10:00+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "VC Roundup: 8-figure funding deals suggest crypto bull market far from over",
+      "url": "https://cointelegraph.com/news/vc-roundup-8-figure-funding-deal-crypto-bull-market?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-03-31T21:28:09+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "Nasdaq files to list Grayscale Polkadot ETF",
+      "url": "https://cointelegraph.com/news/nasdaq-files-grayscalepolkadot-etf?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-02-25T15:45:40+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "Litecoin ETF has 90% chance to get SEC approval in 2025: Analysts",
+      "url": "https://cointelegraph.com/news/litecoin-etf-90-percent-chance-sec-approval-2025?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-02-11T00:35:16+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "21Shares files with SEC for spot Polkadot ETF",
+      "url": "https://cointelegraph.com/news/21shares-filing-spot-polkadot-etf-united-states-sec?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2025-02-01T01:39:44+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "What happened to the top 10 cryptos from when Trump was last president?",
+      "url": "https://cointelegraph.com/magazine/top-10-crypto-trump-president?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2024-11-11T15:22:00+00:00",
+      "sentiment": "not_used"
+    },
+    {
+      "title": "Decentralized AI takes on trust and privacy at OriginTrail’s DKGcon 2024",
+      "url": "https://cointelegraph.com/news/decentralized-ai-trust-privacy-dkgcon-2024?utm_source=rss_feed&utm_medium=rss_tag_polkadot&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "published": "2024-10-30T14:00:00+00:00",
+      "sentiment": "not_used"
+    }
+  ],
+  "news_status": "stale",
+  "news_analyzed_count": 0,
+  "series": [
+    {
+      "date": "2026-10-29T00:00:00Z",
+      "open": 1.012,
+      "high": 1.025,
+      "low": 0.89,
+      "close": 0.909,
+      "volume": 8633718.52,
+      "sma": 1.11095,
+      "ema": 1.082300811938723,
+      "rsi": 31.666203045789132,
+      "macd": -0.05383978210825102,
+      "macd_signal": null,
+      "macd_hist": null,
+      "bb_middle": 1.11095,
+      "bb_upper": 1.2812467703745436,
+      "bb_lower": 0.9406532296254567
+    },
+    {
+      "date": "2026-10-30T00:00:00Z",
+      "open": 0.909,
+      "high": 0.982,
+      "low": 0.869,
+      "close": 0.975,
+      "volume": 6496665.59,
+      "sma": 1.09675,
+      "ema": 1.0720816869921779,
+      "rsi": 41.10891647497556,
+      "macd": -0.055508934844506586,
+      "macd_signal": null,
+      "macd_hist": null,
+      "bb_middle": 1.09675,
+      "bb_upper": 1.2626027961778152,
+      "bb_lower": 0.9308972038221845
+    },
+    {
+      "date": "2026-10-31T00:00:00Z",
+      "open": 0.974,
+      "high": 0.983,
+      "low": 0.945,
+      "close": 0.947,
+      "volume": 1605312.25,
+      "sma": 1.0813,
+      "ema": 1.0601691453738753,
+      "rsi": 38.667688979414656,
+      "macd": -0.058417713371834656,
+      "macd_signal": null,
+      "macd_hist": null,
+      "bb_middle": 1.0813,
+      "bb_upper": 1.2424373327320515,
+      "bb_lower": 0.9201626672679483
+    },
+    {
+      "date": "2026-11-01T00:00:00Z",
+      "open": 0.947,
+      "high": 0.959,
+      "low": 0.939,
+      "close": 0.953,
+      "volume": 1590575.12,
+      "sma": 1.0705,
+      "ema": 1.049962560100173,
+      "rsi": 39.4968297231547,
+      "macd": -0.059552309501543776,
+      "macd_signal": -0.047777635970537746,
+      "macd_hist": -0.01177467353100603,
+      "bb_middle": 1.0705,
+      "bb_upper": 1.235583615177279,
+      "bb_lower": 0.905416384822721
+    },
+    {
+      "date": "2026-11-02T00:00:00Z",
+      "open": 0.953,
+      "high": 0.966,
+      "low": 0.928,
+      "close": 0.937,
+      "volume": 4628949.98,
+      "sma": 1.0593499999999998,
+      "ema": 1.0392042210430137,
+      "rsi": 38.020739503381016,
+      "macd": -0.061038932571811255,
+      "macd_signal": -0.050429895290792455,
+      "macd_hist": -0.0106090372810188,
+      "bb_middle": 1.0593499999999998,
+      "bb_upper": 1.2288130048122594,
+      "bb_lower": 0.8898869951877402
+    },
+    {
+      "date": "2026-11-03T00:00:00Z",
+      "open": 0.938,
+      "high": 0.951,
+      "low": 0.926,
+      "close": 0.939,
+      "volume": 1928152.82,
+      "sma": 1.04895,
+      "ema": 1.02966096189606,
+      "rsi": 38.330989895246724,
+      "macd": -0.061348521215789154,
+      "macd_signal": -0.0526136204757918,
+      "macd_hist": -0.008734900739997352,
+      "bb_middle": 1.04895,
+      "bb_upper": 1.2211283668176696,
+      "bb_lower": 0.8767716331823306
+    },
+    {
+      "date": "2026-11-04T00:00:00Z",
+      "open": 0.939,
+      "high": 0.996,
+      "low": 0.907,
+      "close": 0.955,
+      "volume": 4756268.12,
+      "sma": 1.0392000000000001,
+      "ema": 1.0225503940964351,
+      "rsi": 40.88058235632767,
+      "macd": -0.0596155946979281,
+      "macd_signal": -0.054014015320219065,
+      "macd_hist": -0.005601579377709033,
+      "bb_middle": 1.0392000000000001,
+      "bb_upper": 1.2094593316091662,
+      "bb_lower": 0.8689406683908342
+    },
+    {
+      "date": "2026-11-05T00:00:00Z",
+      "open": 0.955,
+      "high": 0.962,
+      "low": 0.886,
+      "close": 0.909,
+      "volume": 5830968.54,
+      "sma": 1.02545,
+      "ema": 1.0117360708491556,
+      "rsi": 36.241496180873,
+      "macd": -0.06124802440959909,
+      "macd_signal": -0.05546081713809507,
+      "macd_hist": -0.005787207271504016,
+      "bb_middle": 1.02545,
+      "bb_upper": 1.1910669979198993,
+      "bb_lower": 0.8598330020801006
+    },
+    {
+      "date": "2026-11-06T00:00:00Z",
+      "open": 0.908,
+      "high": 0.949,
+      "low": 0.908,
+      "close": 0.913,
+      "volume": 2601268.64,
+      "sma": 1.0153,
+      "ema": 1.0023326355301885,
+      "rsi": 36.91192012823438,
+      "macd": -0.06150992205367656,
+      "macd_signal": -0.05667063812121137,
+      "macd_hist": -0.004839283932465188,
+      "bb_middle": 1.0153,
+      "bb_upper": 1.1823510101735395,
+      "bb_lower": 0.8482489898264607
+    },
+    {
+      "date": "2026-11-07T00:00:00Z",
+      "open": 0.913,
+      "high": 0.913,
+      "low": 0.879,
+      "close": 0.898,
+      "volume": 1968931.8,
+      "sma": 1.0043,
+      "ema": 0.9923961940511229,
+      "rsi": 35.408318936863736,
+      "macd": -0.06221072593945021,
+      "macd_signal": -0.05777865568485914,
+      "macd_hist": -0.004432070254591067,
+      "bb_middle": 1.0043,
+      "bb_upper": 1.171824445977296,
+      "bb_lower": 0.8367755540227039
+    },
+    {
+      "date": "2026-11-08T00:00:00Z",
+      "open": 0.898,
+      "high": 0.906,
+      "low": 0.842,
+      "close": 0.862,
+      "volume": 2747659.56,
+      "sma": 0.9897499999999999,
+      "ema": 0.979977508903397,
+      "rsi": 32.03549699306859,
+      "macd": -0.06492262954295447,
+      "macd_signal": -0.05920745045647821,
+      "macd_hist": -0.0057151790864762575,
+      "bb_middle": 0.9897499999999999,
+      "bb_upper": 1.1535948961670763,
+      "bb_lower": 0.8259051038329235
+    },
+    {
+      "date": "2026-11-09T00:00:00Z",
+      "open": 0.863,
+      "high": 0.894,
+      "low": 0.849,
+      "close": 0.857,
+      "volume": 3246126.59,
+      "sma": 0.975,
+      "ema": 0.9682653651983115,
+      "rsi": 31.585481163691,
+      "macd": -0.06670634171615053,
+      "macd_signal": -0.06070722870841268,
+      "macd_hist": -0.005999113007737852,
+      "bb_middle": 0.975,
+      "bb_upper": 1.130674018384572,
+      "bb_lower": 0.8193259816154279
+    },
+    {
+      "date": "2026-11-10T00:00:00Z",
+      "open": 0.857,
+      "high": 0.87,
+      "low": 0.831,
+      "close": 0.844,
+      "volume": 4078253.02,
+      "sma": 0.96,
+      "ema": 0.956430568512758,
+      "rsi": 30.39015276133364,
+      "macd": -0.06838068781519413,
+      "macd_signal": -0.06224192052976897,
+      "macd_hist": -0.006138767285425159,
+      "bb_middle": 0.96,
+      "bb_upper": 1.1051013438945352,
+      "bb_lower": 0.8148986561054647
+    },
+    {
+      "date": "2026-11-11T00:00:00Z",
+      "open": 0.844,
+      "high": 0.872,
+      "low": 0.824,
+      "close": 0.84,
+      "volume": 3934268.96,
+      "sma": 0.9463999999999999,
+      "ema": 0.9453419429401143,
+      "rsi": 30.0137769412986,
+      "macd": -0.06923231865843116,
+      "macd_signal": -0.0636400001555014,
+      "macd_hist": -0.005592318502929752,
+      "bb_middle": 0.9463999999999999,
+      "bb_upper": 1.0826855825096704,
+      "bb_lower": 0.8101144174903294
+    },
+    {
+      "date": "2026-11-12T00:00:00Z",
+      "open": 0.84,
+      "high": 0.853,
+      "low": 0.815,
+      "close": 0.834,
+      "volume": 3376936.66,
+      "sma": 0.9337499999999999,
+      "ema": 0.9347379483743892,
+      "rsi": 29.425092429488387,
+      "macd": -0.06958921098679727,
+      "macd_signal": -0.06482984232176059,
+      "macd_hist": -0.0047593686650366784,
+      "bb_middle": 0.9337499999999999,
+      "bb_upper": 1.0622285974394186,
+      "bb_lower": 0.805271402560581
+    },
+    {
+      "date": "2026-11-13T00:00:00Z",
+      "open": 0.835,
+      "high": 0.851,
+      "low": 0.797,
+      "close": 0.819,
+      "volume": 4271655.06,
+      "sma": 0.9223000000000001,
+      "ema": 0.9237152866244474,
+      "rsi": 27.94919571470203,
+      "macd": -0.07027236923851654,
+      "macd_signal": -0.06591834770511179,
+      "macd_hist": -0.0043540215334047505,
+      "bb_middle": 0.9223000000000001,
+      "bb_upper": 1.0488118176298178,
+      "bb_lower": 0.7957881823701823
+    },
+    {
+      "date": "2026-11-14T00:00:00Z",
+      "open": 0.818,
+      "high": 0.821,
+      "low": 0.683,
+      "close": 0.707,
+      "volume": 10409718.34,
+      "sma": 0.9061999999999999,
+      "ema": 0.9030757355173572,
+      "rsi": 19.916483101632465,
+      "macd": -0.07894125539882635,
+      "macd_signal": -0.06852292924385471,
+      "macd_hist": -0.010418326154971638,
+      "bb_middle": 0.9061999999999999,
+      "bb_upper": 1.0543966261424338,
+      "bb_lower": 0.7580033738575659
+    },
+    {
+      "date": "2026-11-15T00:00:00Z",
+      "open": 0.706,
+      "high": 0.742,
+      "low": 0.681,
+      "close": 0.737,
+      "volume": 6312833.55,
+      "sma": 0.89245,
+      "ema": 0.8872589988014183,
+      "rsi": 26.047515344036327,
+      "macd": -0.08244033993583455,
+      "macd_signal": -0.07130641138225068,
+      "macd_hist": -0.011133928553583874,
+      "bb_middle": 0.89245,
+      "bb_upper": 1.0495900330915084,
+      "bb_lower": 0.7353099669084914
+    },
+    {
+      "date": "2026-11-16T00:00:00Z",
+      "open": 0.737,
+      "high": 0.747,
+      "low": 0.718,
+      "close": 0.733,
+      "volume": 2565583.67,
+      "sma": 0.8790000000000001,
+      "ema": 0.8725676655822356,
+      "rsi": 25.764290033032523,
+      "macd": -0.08456138520060352,
+      "macd_signal": -0.07395740614592125,
+      "macd_hist": -0.010603979054682272,
+      "bb_middle": 0.8790000000000001,
+      "bb_upper": 1.0422605279913075,
+      "bb_lower": 0.7157394720086927
+    },
+    {
+      "date": "2026-11-17T00:00:00Z",
+      "open": 0.734,
+      "high": 0.747,
+      "low": 0.713,
+      "close": 0.744,
+      "volume": 2839648.44,
+      "sma": 0.8656,
+      "ema": 0.8603231260029751,
+      "rsi": 28.08025133329616,
+      "macd": -0.08438201741430451,
+      "macd_signal": -0.0760423283995979,
+      "macd_hist": -0.008339689014706608,
+      "bb_middle": 0.8656,
+      "bb_upper": 1.0269783132889934,
+      "bb_lower": 0.7042216867110067
+    },
+    {
+      "date": "2026-11-18T00:00:00Z",
+      "open": 0.744,
+      "high": 0.745,
+      "low": 0.703,
+      "close": 0.719,
+      "volume": 2762053.69,
+      "sma": 0.8561,
+      "ema": 0.8468637806693584,
+      "rsi": 26.088225448307668,
+      "macd": -0.08527417065963372,
+      "macd_signal": -0.07788869685160507,
+      "macd_hist": -0.0073854738080286475,
+      "bb_middle": 0.8561,
+      "bb_upper": 1.0281568510696406,
+      "bb_lower": 0.6840431489303592
+    },
+    {
+      "date": "2026-11-19T00:00:00Z",
+      "open": 0.72,
+      "high": 0.727,
+      "low": 0.704,
+      "close": 0.714,
+      "volume": 2646093.93,
+      "sma": 0.8430500000000001,
+      "ema": 0.8342100872722766,
+      "rsi": 25.69560980938472,
+      "macd": -0.08540022610073639,
+      "macd_signal": -0.07939100270143135,
+      "macd_hist": -0.0060092233993050415,
+      "bb_middle": 0.8430500000000001,
+      "bb_upper": 1.0166397174374122,
+      "bb_lower": 0.6694602825625879
+    },
+    {
+      "date": "2026-11-20T00:00:00Z",
+      "open": 0.715,
+      "high": 0.718,
+      "low": 0.65,
+      "close": 0.663,
+      "volume": 6543012.39,
+      "sma": 0.8288499999999999,
+      "ema": 0.817904364674917,
+      "rsi": 22.050386655201166,
+      "macd": -0.08859414160472578,
+      "macd_signal": -0.08123163048209023,
+      "macd_hist": -0.007362511122635557,
+      "bb_middle": 0.8288499999999999,
+      "bb_upper": 1.0122874825383312,
+      "bb_lower": 0.6454125174616685
+    },
+    {
+      "date": "2026-11-21T00:00:00Z",
+      "open": 0.663,
+      "high": 0.669,
+      "low": 0.618,
+      "close": 0.655,
+      "volume": 8360043.92,
+      "sma": 0.81395,
+      "ema": 0.8023896632773059,
+      "rsi": 21.53432574517548,
+      "macd": -0.0907250538473986,
+      "macd_signal": -0.0831303151551519,
+      "macd_hist": -0.007594738692246694,
+      "bb_middle": 0.81395,
+      "bb_upper": 1.0029563226455682,
+      "bb_lower": 0.6249436773544317
+    },
+    {
+      "date": "2026-11-22T00:00:00Z",
+      "open": 0.655,
+      "high": 0.667,
+      "low": 0.641,
+      "close": 0.662,
+      "volume": 3409300.97,
+      "sma": 0.8002,
+      "ema": 0.7890192191556576,
+      "rsi": 23.227429500272734,
+      "macd": -0.09080226368029165,
+      "macd_signal": -0.08466470486017985,
+      "macd_hist": -0.006137558820111799,
+      "bb_middle": 0.8002,
+      "bb_upper": 0.9913979079383471,
+      "bb_lower": 0.6090020920616529
+    },
+    {
+      "date": "2026-11-23T00:00:00Z",
+      "open": 0.662,
+      "high": 0.723,
+      "low": 0.65,
+      "close": 0.676,
+      "volume": 5376035.73,
+      "sma": 0.78705,
+      "ema": 0.7782554839979761,
+      "rsi": 26.636969606036786,
+      "macd": -0.08871116296611614,
+      "macd_signal": -0.08547399648136711,
+      "macd_hist": -0.0032371664847490322,
+      "bb_middle": 0.78705,
+      "bb_upper": 0.974391906684011,
+      "bb_lower": 0.5997080933159891
+    },
+    {
+      "date": "2026-11-24T00:00:00Z",
+      "open": 0.676,
+      "high": 0.694,
+      "low": 0.645,
+      "close": 0.653,
+      "volume": 4137490.3,
+      "sma": 0.77195,
+      "ema": 0.7663263902838832,
+      "rsi": 24.696488526413432,
+      "macd": -0.08789664060639335,
+      "macd_signal": -0.08595852530637237,
+      "macd_hist": -0.0019381153000209844,
+      "bb_middle": 0.77195,
+      "bb_upper": 0.9512190436188042,
+      "bb_lower": 0.5926809563811959
+    },
+    {
+      "date": "2026-11-25T00:00:00Z",
+      "open": 0.652,
+      "high": 0.669,
+      "low": 0.619,
+      "close": 0.66,
+      "volume": 4682134.06,
+      "sma": 0.7595,
+      "ema": 0.7562000673997038,
+      "rsi": 26.45257918274369,
+      "macd": -0.08569840638602477,
+      "macd_signal": -0.08590650152230285,
+      "macd_hist": 0.00020809513627807752,
+      "bb_middle": 0.7595,
+      "bb_upper": 0.9334752856011471,
+      "bb_lower": 0.5855247143988528
+    },
+    {
+      "date": "2026-11-26T00:00:00Z",
+      "open": 0.659,
+      "high": 0.679,
+      "low": 0.657,
+      "close": 0.673,
+      "volume": 3774759.76,
+      "sma": 0.7474999999999999,
+      "ema": 0.7482762514568748,
+      "rsi": 29.72999599984007,
+      "macd": -0.08196248605512602,
+      "macd_signal": -0.08511769842886749,
+      "macd_hist": 0.003155212373741473,
+      "bb_middle": 0.7474999999999999,
+      "bb_upper": 0.910212630118257,
+      "bb_lower": 0.5847873698817428
+    },
+    {
+      "date": "2026-11-27T00:00:00Z",
+      "open": 0.673,
+      "high": 0.695,
+      "low": 0.673,
+      "close": 0.691,
+      "volume": 981413.38,
+      "sma": 0.73715,
+      "ema": 0.7428213703657438,
+      "rsi": 34.10832709606052,
+      "macd": -0.07666554008584503,
+      "macd_signal": -0.08342726676026299,
+      "macd_hist": 0.006761726674417962,
+      "bb_middle": 0.73715,
+      "bb_upper": 0.8859965988862384,
+      "bb_lower": 0.5883034011137616
+    }
+  ],
+  "comparison_series": []
+}
