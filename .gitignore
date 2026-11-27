@@ -8,3 +8,6 @@ data/*.db-*
 build/
 requirements-*.txt
 requirements-media/
+
+# Сборка пакета работы (дублирует deliverables/)
+*.zip
